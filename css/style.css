@@ -5,6 +5,7 @@
   --red: #ff5470;
   --yellow: #fde24f;
   --black: #1b2d45;
+  --white: #ffffff;
   --darkBlue: #00214d;
   --grey: #bfbfbf;
   --lightGrey: #f2f4f6;
@@ -38,6 +39,20 @@ body {
 
 p {
   margin-bottom: 1rem;
+  max-width: 40rem;
+}
+
+p a {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 2px solid var(--green);
+}
+
+blockquote {
+  border: 1px solid var(--darkBlue);
+  margin: 0.5rem;
+  padding: 2rem;
+  background-color: var(--white);
 }
 
 h1,
