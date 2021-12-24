@@ -13,6 +13,10 @@
   /* Define Color intentions */
   --background: var(--lightGrey);
   --textColor: var(--black);
+  --lineColor: var(--grey);
+
+  /* Styles */
+  --line: 1px solid var(--lineColor);
 
   /* Type */
   --headingFont: "Vollkorn", serif;
@@ -103,4 +107,33 @@ body {
   /* Swap css variables */
   --textColor: var(--lightGrey);
   --background: var(--black);
+}
+
+label {
+  display: block;
+  font-size: var(--smallText);
+}
+
+input,
+textarea {
+  border: var(--line);
+  border-radius: 0.25rem;
+  padding: 2px 5px;
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+textarea {
+  width: 100%;
+  height: 5rem;
+}
+
+select {
+  border: var(--line);
+}
+
+hr {
+  border-top: var(--line);
 }
