@@ -174,3 +174,34 @@ button[disabled] {
   cursor: not-allowed;
   box-shadow: unset;
 }
+
+/* Layout */
+
+.layout {
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* Grid */
+
+.grid {
+  --gridColumns: 2;
+  display: grid;
+  grid-template-columns: repeat(var(--gridColumns), 1fr);
+}
+
+.cols-3 {
+  --gridColumns: 3;
+}
+
+/* Flexbox */
+
+.flex {
+  --justifyContent: space-between;
+  display: flex;
+  justify-content: var(--justifyContent);
+}
+
+.flex-around {
+  --justifyContent: space-around;
+}
