@@ -33,6 +33,9 @@
   --level-1: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --level-2: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --level-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Positioning */
+  --containerPadding: 2.5%;
 }
 
 /* From type-scale */
@@ -47,6 +50,23 @@ body {
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
+}
+
+header {
+  --headerBackground: var(--darkBlue);
+  color: var(--white);
+  min-height: 3rem;
+  background: var(--headerBackground);
+  box-shadow: var(--level-3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--containerPadding);
+}
+
+header nav a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 p {
@@ -208,4 +228,9 @@ button[disabled] {
   .grid {
     display: grid;
   }
+}
+
+.logo {
+  font-size: 1rem;
+  margin: 0;
 }
